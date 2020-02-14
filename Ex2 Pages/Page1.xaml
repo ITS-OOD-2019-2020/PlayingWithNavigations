@@ -1,0 +1,36 @@
+﻿<Page x:Class="Ex3_Pages.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Ex3_Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1"
+      WindowTitle="Page 1"
+      
+      >
+
+    <Grid Background="DarkSlateGray">
+
+        <Border Margin="10" Background="Gray" CornerRadius="50">
+            <StackPanel>
+                <TextBlock Margin="10" Text="Page 1" Foreground="LightGray"/>
+                <TextBlock Margin="10">
+                    <Hyperlink NavigateUri="Page2.xaml">Link to Page 2</Hyperlink>
+                </TextBlock>
+
+                <Button Name="btnNextPage" Click="btnNextPage_Click" Content="Next Page" Width="100" Margin="10"/>
+                <Button Name="btnNextPage2" Click="btnNextPage2_Click" Content="Next Page" Width="100" Margin="10"/>
+                <Button Name="btnNextPage3" Click="btnNextPage3_Click" Content="Next Page" Width="100" Margin="10"/>
+                <Button Name="btnNextPage4" Click="btnNextPage4_Click" Content="Forward >>" Width="100" Margin="10"/>
+
+
+            </StackPanel>
+
+
+        </Border>
+
+    </Grid>
+
+</Page>
